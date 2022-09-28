@@ -1,0 +1,23 @@
+{
+  "name": "tddintro",
+  "version": "1.0.0",
+  "description": "Initial implementation of unit testing   * Utilize Jest",
+  "main": "tddIntro.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connorwarme/tddIntro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connorwarme/tddIntro/issues"
+  },
+  "homepage": "https://github.com/connorwarme/tddIntro#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "jest": "^29.1.1"
+  }
+}
