@@ -59,4 +59,28 @@ const caesar = (string, shift) => {
 }
 
 console.log(caesar('ab.c', 3));
-export { capitalize, string, reverseString, calculator, caesar };
+
+const avg = (array) => {
+    let sum = array.reduce((prev, cur) => prev + cur, 0);
+    return Math.floor(sum/array.length);
+}
+const minimum = (array) => {
+    let copy = array.sort((a, b) => a - b);
+    return copy[0];
+}
+const maximum = (array) => {
+    let copy = array.sort((a, b) => b - a);
+    console.log(copy);
+    let copy2 = array.sort((a, b) => a + b);
+    console.log(copy2);
+    return copy2[0];
+}
+
+const analyzeArray = (array) => {
+    let average = avg(array);
+    let min = minimum(array);
+    let max = maximum(array);
+    let length = array.length;
+    return {average, min, max, length}
+}
+export { capitalize, string, reverseString, calculator, caesar, analyzeArray };

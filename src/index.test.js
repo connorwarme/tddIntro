@@ -3,7 +3,8 @@ import {
     string, 
     reverseString,
     calculator,
-    caesar
+    caesar,
+    analyzeArray
  } from './index';
 
 test('Capitalize first letter of string', () => {
@@ -22,4 +23,10 @@ test('Caesar cipher attempt', () => {
     expect(caesar('turn', 3)).toBe('wxuq');
     expect(caesar('zero', 5)).toBe('ejwt');
     expect(caesar('ab.c', 3)).toBe('de.f')
+})
+test('Array analysis', () => {
+    expect(analyzeArray([3,9,4,1,8]).average).toEqual(5);
+    expect(analyzeArray([3,9,4,1,8]).min).toEqual(1);
+    expect(analyzeArray([3,9,4,1,8]).max).toEqual(9);
+    expect(analyzeArray([3,9,4,1,8]).length).toEqual(5);
 })
