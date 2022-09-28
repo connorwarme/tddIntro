@@ -1,2 +1,0 @@
-import Capitalize from './tddIntro';
-
